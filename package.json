@@ -1,0 +1,53 @@
+{
+  "name": "@statewalker/store-ui",
+  "version": "0.1.0",
+  "description": "Data Store binding for views and inputs",
+  "keywords": [],
+  "homepage": "https://github.com/statewalker/statewalker-store-ui",
+  "author": {
+    "name": "Mikhail Kotelnikov",
+    "email": "mikhail.kotelnikov@gmail.com"
+  },
+  "type": "module",
+  "files": [
+    "dist/**/package.json",
+    "dist/**/*.js",
+    "src/**/*.js",
+    "index.js"
+  ],
+  "devDependencies": {
+    "@statewalker/rollup": "^0.1.5",
+    "eslint": "^8",
+    "expect.js": "^0.3",
+    "mocha": "^10",
+    "rollup": "^2"
+  },
+  "module": "src/index.js",
+  "exports": {
+    "import": "./src/index.js",
+    "umd": "./dist/index-umd.min.js",
+    "default": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:statewalker/statewalker-store-ui.git"
+  },
+  "scripts": {
+    "eslint": "eslint src",
+    "rollup": "rollup -c",
+    "test": "mocha -R spec ./test/index.js && yarn eslint",
+    "prepublishOnly": "rm -rf dist && yarn test && yarn rollup"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@statewalker/utils": "^0.3.0",
+    "@statewalker/utils-dom": "^0.1.2"
+  },
+  "peerDependencies": {
+    "@statewalker/store": "^0.2.7"
+  }
+}
