@@ -33,7 +33,7 @@
     "eslint": "^8",
     "expect.js": "^0.3",
     "mocha": "^10",
-    "rollup": "^2"
+    "rollup": "^3"
   },
   "peerDependencies": {
     "@statewalker/store": "^0.5.0"
