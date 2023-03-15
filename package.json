@@ -1,6 +1,6 @@
 {
   "name": "@statewalker/store-ui",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Data Store binding for views and inputs",
   "keywords": [],
   "homepage": "https://github.com/statewalker/statewalker-store-ui",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@statewalker/utils": "^0.4.2",
-    "@statewalker/utils-dom": "^0.3.2"
+    "@statewalker/utils-dom": "^0.4.0"
   },
   "devDependencies": {
     "@statewalker/rollup": "^0.1.6",

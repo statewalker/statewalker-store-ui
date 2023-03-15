@@ -1,5 +1,12 @@
 # @statewalker/store-ui
 
+## 3.0.2
+
+### Patch Changes
+
+- Updated dependencies
+  - @statewalker/utils-dom@0.4.0
+
 ## 3.0.1
 
 ### Patch Changes
